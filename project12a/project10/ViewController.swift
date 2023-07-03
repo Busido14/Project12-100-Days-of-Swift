@@ -82,8 +82,6 @@ class ViewController: UICollectionViewController,
         present(picker, animated: true)
     }
     
-    
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else { return }
         
